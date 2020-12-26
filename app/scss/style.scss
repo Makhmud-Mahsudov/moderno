@@ -790,3 +790,154 @@
   }
 }
 // end footer
+// start style of new items // start catalog
+.product__item.hello{
+  max-width: 270px;
+  width: 100%;
+}
+.new-item__wraper{
+  position: relative;
+}
+.new-item__star{
+  position: absolute;
+  right: 30px;
+}
+.wraper{
+  margin: 40px 0;
+}
+.catalog{
+  background-color: #f4f6f5;
+}
+.catalog__inner-setings{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  margin-bottom: 30px;
+}
+.catalog__inner-title{
+  font-size: 14px;
+  color: #707070;
+  line-height: 24px;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 180px;
+  width: 100%;
+  &::before{
+    font-family: 'icomoon';
+    content: "\f161";
+    position: absolute;
+    left: 0;
+  }
+  &::after{
+    font-family: 'icomoon';
+    content: "\f0dc";
+    position: absolute;
+    right: 0;
+  }
+}
+.inner-btn{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  color:  #90a4ae;
+  & + .inner-btn{
+    margin-left: 5px;
+  }
+  &.active{
+    color: $green;
+  }
+}
+.product__item{
+  transition: all .3s;
+  &:hover{
+    box-shadow: 0px 16px 20px 0px rgba(216, 216, 216, 0.75);
+  }
+}
+.product__item-img.catalog-img{
+  max-width: 268px;
+  width: 100%;
+}
+.catalog__inner{
+  display: flex;
+}
+
+.catalog__inner-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .product__item{
+    margin-bottom: 30px;
+  }
+}
+.pagination{
+  width: 100%;
+  margin-top: 60px;
+}
+.pagination-list{
+  display: flex;
+  justify-content: start;
+  &__item{
+    padding: 13px 20px;
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    margin-left: 8px;
+    &.active{
+      padding: 13px 20px;
+      background-color: $red;
+      a{
+        display: block;
+        color: #fff;
+      }
+    }
+  }
+}
+.catalog__inner-aside{
+  min-width: 268px;
+  margin: 40px 40px 0 30px;
+}
+
+.aside__catigories{
+  padding: 25px 25px 40px 25px;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  &-title{
+    font-size: 20px;
+    color: #263238;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #dedede;
+    @include f700;
+  }
+  &-list{
+    li{
+      position: relative;
+      margin-top: 25px;
+      span{
+        position: absolute;
+        right: 0;
+        color: #90a4ae;
+      }
+      a{
+        @include f500;
+        font-size: 15px;
+        color: #263238;
+      }
+    }
+  }
+}
+.aside__catalog-li{
+  padding-left: 20px;
+  &::before{
+    position: absolute;
+    content: "\f105";
+    left: 0;
+    font-family: 'icomoon';
+    font-size: 14px;
+    color: $green;
+  }
+}
+
+
+// end catalog

@@ -65,6 +65,31 @@ body{
   display: inline-block;
   margin-right: 13px;
 }
+.breadcrumbs{
+  padding: 50px 0;
+  background-color: #f4f6f5;
+}
+.breadcrumbs__list-item{
+  display: inline-block;
+  padding-right: 16px;
+  margin-right: 10px;
+  position: relative;
+  line-height: 18px;
+  font-size: 15px;
+  &::after{
+    content: "\f105";
+    position: absolute;
+    right: 0;
+    font-family: 'icomoon';
+  }
+  &:last-child{
+    color: $bg;
+  }
+  &:last-child::after{
+    display: none;
+  }
+}
+
 
 
 
