@@ -403,6 +403,7 @@
     justify-content: space-between;
     padding: 10px 30px;
     align-items: center;
+    flex-wrap: wrap;
     min-height: 90px;
     @include f500;
     border-bottom: 1px solid #e7ecf2;
@@ -430,7 +431,7 @@
     justify-content: space-between;
     align-items: center;
     min-height: 70px;
-    padding: 10px 30px;
+
   }
   &-author{
     display: flex;
@@ -797,24 +798,70 @@
   width: 100%;
   background-color: #fff;
 }
+.product__item{
+  transition: all .3s;
+}
 .product__item.hello.mix.category-joomla.category-new.product__item--list{
+  min-width: 870px;
   max-width: 870px;
-  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   .product__item-content{
     align-items: baseline;
+    position: relative;
+    width: 100%;
+    .commets{
+      display: inline-block;
+    }
+    .likes{
+      display: inline-block;
+    }
+    .cls__span{
+      display: inline-block;
+    }
+    .product__item-price-sales{
+      display: block;
+    }
+    .product__description{
+      display: block;
+    }
+    .product__item-name{
+      margin-top: 25px;
+    }
+    .product__item-price{
+      position: absolute;
+      right: 32px;
+      top: 30px;
+      font-size: 30px;
+    }
+    .product__item-info{
+      border-top: 1px solid #dedede;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      .product__item-author{
+        margin-left: 30px;
+      }
+    }
   }
+  
+}
+.product__item-price-sales{
+  margin-top: 20px;
+  color: #aeb4bb;
+  font-size: 14px;
+  @include f500;
+  display: none;
 }
 .new-item__wraper{
   position: relative;
 }
 .new-item__star{
   position: absolute;
-  right: 5px;
+  right: 22px;
 }
 .wraper{
-  margin: 40px 0;
+  margin-bottom: 40px;
 }
 .catalog{
   background-color: #f4f6f5;
@@ -911,8 +958,9 @@
   }
 }
 .catalog__inner-aside{
-  min-width: 268px;
-  margin: 40px 40px 0 30px;
+  max-width: 268px;
+  width: 100%;
+  margin: 0px 40px 0 30px;
 }
 
 .aside__catigories{
@@ -1016,6 +1064,43 @@
   background-size: cover;
   background-position: center;
 }
+.rate-star{
+  span{
+    display: inline-block;
+  }
+}
+.cls{
+  display: inline-block;
+  margin-left: 10px;
+  padding-right:27px;
+  position: relative;
+  &::before{
+    content: "\f0e5";
+    position: absolute;
+    right: 0;
+    font-family: 'icomoon';
+    font-size: 16px;
+    color: $green;
+  }
+  
+  &__span{
+    margin-left: 17px;
+    color: #919699;
+  }
+}
+.commets{
+  display: none;
+}
+.likes{
+  display: none;
+}
+.cls__span{
+  display: none;
+}
+.likes::before{
+  content: "\f08a";
+  font-family: 'icomoon';
+}
 .rate-star.aside__new-item-star{
   margin-right: 0;
 }
@@ -1059,6 +1144,17 @@
     font-size: 15px;
     text-align: center;
   }
+}
+.product__description{
+  min-width: 400px;
+  max-width: 450px;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 10px;
+  display: none;
+}
+.non{
+  display: inline-block;
 }
 
 // end catalog
