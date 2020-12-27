@@ -222,7 +222,7 @@
       <div class="catalog__inner">
         <aside class="catalog__inner-aside">
           <div class="aside__catigories">
-            <div class="aside__catigories-title">
+            <div class="title-aside catalog__title">
               Categories
             </div>
             <ul class="aside__catigories-list">
@@ -234,20 +234,105 @@
             </ul>
           </div>
           <div class="aside__price">
-            <div class="aside__price-title">
+            <div class="title-aside">
               Price Range
             </div>
             <div class="aside__price-scale">
               <input type="text" class="js-range-slider" name="my_range" value=""
-        data-type="double"
-        data-min="0"
-        data-max="1000"
-        data-from="200"
-        data-to="500"
-        data-grid="true"
-    />
+                data-min="0"
+                data-max="1000"
+                data-from="0"
+                data-to="600"
+              />
             </div>
-            <button class="aside__price-btn" type="submit">Search</button>
+            <button class="aside__price-btn" type="submit"><span></span>Search</button>
+          </div>
+          <div class="top-sellers">
+            <div class="top-sellers-title title-aside">
+              Top 10 Sellers
+            </div>
+
+            <div class="product__item hello mix category-joomla top top-sellers__item category-new" data-order="3">
+              <a class="product__item-img aside__catalog-img catalog-img" href="#" style="background-image: url(images/content/13.png);"></a>
+              <div class="product__item-content top-sellers__item-content">
+                <div class="product__item-name">
+                  <a class="product__item-title" href="#">
+                    The Post Grid Pro
+                  </a>
+                  <a class="product__item-category" href="#">
+                    Site Template
+                  </a>
+                </div>
+                <div class="product__item-price">
+                  $19
+                </div>
+              </div>
+              <div class="product__item-info new-item__wraper top-sellers__author">
+                <a class="product__item-author " href="#">
+                  <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
+                  <span>Radiustheme</span>
+                </a>
+                <div class="product__item-star new-item__star">
+                  <div class="rate-star aside__new-item-star"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__item hello mix category-joomla top top-sellers__item category-new" data-order="3">
+              <a class="product__item-img aside__catalog-img catalog-img" href="#" style="background-image: url(images/content/13.png);"></a>
+              <div class="product__item-content top-sellers__item-content">
+                <div class="product__item-name">
+                  <a class="product__item-title" href="#">
+                    The Post Grid Pro
+                  </a>
+                  <a class="product__item-category" href="#">
+                    Site Template
+                  </a>
+                </div>
+                <div class="product__item-price">
+                  $19
+                </div>
+              </div>
+              <div class="product__item-info new-item__wraper top-sellers__author">
+                <a class="product__item-author " href="#">
+                  <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
+                  <span>Radiustheme</span>
+                </a>
+                <div class="product__item-star new-item__star">
+                  <div class="rate-star aside__new-item-star"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="product__item hello mix category-joomla top top-sellers__item category-new top-sellers__last" data-order="3">
+              <a class="product__item-img aside__catalog-img catalog-img" href="#" style="background-image: url(images/content/13.png);"></a>
+              <div class="product__item-content top-sellers__item-content">
+                <div class="product__item-name">
+                  <a class="product__item-title" href="#">
+                    The Post Grid Pro
+                  </a>
+                  <a class="product__item-category" href="#">
+                    Site Template
+                  </a>
+                </div>
+                <div class="product__item-price">
+                  $19
+                </div>
+              </div>
+              <div class="product__item-info new-item__wraper top-sellers__author">
+                <a class="product__item-author " href="#">
+                  <div class="avatar" style="background-image: url(images/content/user.jpg);"></div>
+                  <span>Radiustheme</span>
+                </a>
+                <div class="product__item-star new-item__star">
+                  <div class="rate-star aside__new-item-star"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="top-sellers__btn-bottom">
+              <a href="#">View All</a>
+            </div>
           </div>
         </aside>
         <div class="wraper">
@@ -256,12 +341,12 @@
               Sort by: New Items
             </div>
             <div class="catalog__inner-btn">
-              <div class="inner-btn icon-th-large"></div>
-              <div class="inner-btn icon-th-list"></div>
+              <button class="inner-btn icon-th-large inner-btn--active">
+              <button class="inner-btn icon-th-list ">
             </div>
           </div>
           <div class="catalog__inner-list">
-            <div class="product__item hello mix category-joomla category-new" data-order="3">
+            <div class="product__item hello mix category-joomla category-new"  data-order="3">
               <a class="product__item-img catalog-img" href="#" style="background-image: url(images/content/all-item.png);"></a>
               <div class="product__item-content">
                 <div class="product__item-name">

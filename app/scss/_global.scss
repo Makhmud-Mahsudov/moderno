@@ -89,6 +89,14 @@ body{
     display: none;
   }
 }
+.title-aside{
+  font-size: 20px;
+  @include f700;
+  color: #263238;
+  border-bottom: 1px solid #dedede;
+  margin: 0 28px;
+  padding-bottom: 23px;
+}
 
 
 
