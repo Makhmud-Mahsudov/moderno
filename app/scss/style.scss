@@ -3,7 +3,9 @@
 @import 'fonts';
 
 // start header
-
+.header{
+  background-color: $grey;
+}
 .header__top-inner{
   display: flex;
   justify-content: space-between;
@@ -106,13 +108,15 @@
     background-color: $yellow;
   }
 }
+.basket{
+  margin-right: 20px;
+}
 .massage{
   span{
     background-color: $tomato;
   }
 }
 .user{
-  margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   position: relative;
@@ -186,6 +190,7 @@
   border-top: 1px solid #e0e0e0;
   position: absolute;
   top: 62px;
+  z-index: 1;
   right: 0;
   height: 0;
   overflow: hidden;
@@ -293,7 +298,10 @@
     line-height: 18px;
   }
 }
-
+.header__menu-btn,
+.menu__btn{
+  display: none;
+}
 
 
 
@@ -801,7 +809,7 @@
 .product__item{
   transition: all .3s;
 }
-.product__item.hello.mix.category-joomla.category-new.product__item--list{
+.product__item.hello.mix.category-joomla.category-new.product__item--list.only{
   min-width: 870px;
   max-width: 870px;
   display: flex;
@@ -1123,6 +1131,7 @@
   padding: 30px;
   background-color: #fff;
   border: 1px solid #dedede;
+  margin-bottom: 40px;
 }
 .product__item-content.top-sellers__item-content{
   padding-left: 0;
@@ -1158,3 +1167,11 @@
 }
 
 // end catalog
+
+
+
+
+
+
+
+@import 'media';
